@@ -221,6 +221,7 @@ section {
   background-size: cover;
   /* Figma: Effect -> Layer blur */
   filter: blur(3px);
+  transition: background;
 }
 .hero .main-visual .main-visual-bg::after {
   content: "";
@@ -264,6 +265,7 @@ section {
 .swiper-slide a {
   display: flex;
   gap: 100px;
+  width: 100%;
 }
 .slide-image {
   width: 100%;
