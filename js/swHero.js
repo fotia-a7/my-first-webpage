@@ -2,10 +2,12 @@ const mainVisualBg = document.querySelector(
   ".hero .main-visual .main-visual-bg",
 );
 // console.log(mainVisualBg);
-const heroBtns = document.querySelectorAll(".visual-inner button");
+const heroBtns = document.querySelectorAll(".visual-inner .sw-hero-btn");
 // console.log(heroBtns);
-const playstopbtn = document.querySelector(".sw-hero .play-stop-btn");
-console.log(playstopbtn);
+const playstopbtn = document.querySelector(
+  ".sw-hero .pagination .play-stop-btn",
+);
+// console.log(playstopbtn);
 
 // 히어로 슬라이드 버튼 호버 인터랙션
 heroBtns.forEach((btn) => {
@@ -48,19 +50,20 @@ const swHero = new Swiper(".sw-hero", {
   },
 });
 
-// 재생, 정지 버튼
+//재생, 정지 버튼
 playstopbtn.addEventListener("click", () => {
-  // console.log(슬라이드 자동재생 정지);
-  swhero.autoplay.stop();
-  const isrunning = swhero.autoplay.running;
-  console.log(isrunning);
+  // swHero.autoplay.stop();
+  // console.log("슬라이드 자동재생 정지");
+  const isrunning = swHero.autoplay.running;
+  // console.log(isrunning);
 
   if (isrunning) {
-    swhero.autoplay.stop();
+    swHero.autoplay.stop();
     console.log("자동재생 정지");
     playstopbtn.style.backgroundImage = `url(assets/icons/slide_play.png)`;
   } else {
-    swhero.autoplay.start();
+    swHero.autoplay.start();
+    console.log("자동재생 시작");
     playstopbtn.style.backgroundImage = `url(assets/icons/slide_stop.png)`;
   }
 });

@@ -414,7 +414,7 @@ section {
   pointer-events: none;
 }
 
-.sw-hero .pagenation {
+.sw-hero .pagination {
   position: absolute;
   left: calc(50% + 140px);
   top: 465px;
@@ -424,7 +424,7 @@ section {
   gap: 8px;
   align-items: center;
 }
-.sw-hero .pagenation .play-stop-btn {
+.sw-hero .pagination .play-stop-btn {
   position: relative;
   width: 30px;
   height: 30px;
