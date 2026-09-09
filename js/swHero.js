@@ -61,9 +61,11 @@ playstopbtn.addEventListener("click", () => {
     swHero.autoplay.stop();
     console.log("자동재생 정지");
     playstopbtn.style.backgroundImage = `url(assets/icons/slide_play.png)`;
+    playstopbtn.textContent = "재생";
   } else {
     swHero.autoplay.start();
     console.log("자동재생 시작");
     playstopbtn.style.backgroundImage = `url(assets/icons/slide_stop.png)`;
+    playstopbtn.textContent = "정지";
   }
 });
