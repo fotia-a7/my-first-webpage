@@ -643,6 +643,9 @@ section {
   width: 928px;
 }
 .festival .festival-prev-btn {
+  /* 
+  너비 10px, 높이 16px, 이전 이미지 백그라운드로 삽입
+  */
   width: 10px;
   height: 16px;
   background: url("../assets/icons/main_slide_prev.png") 0 0 no-repeat;
@@ -685,7 +688,7 @@ section {
 }
 .sw-festival .swiper-wrapper {
 }
-.sw-festivals .swiper-slide {
+.sw-festival .swiper-slide {
   /* margin-right: 32px; */
 }
 .sw-festival .swiper-slide:nth-child(odd) {
@@ -693,8 +696,7 @@ section {
 }
 .sw-festival .swiper-slide a {
   border-radius: 10px;
-  overflow: hidden;
-  /* 피그마에서는 Clip content 체크에 해당 */
+  overflow: hidden; /* 피그마에서는 Clip Content 체크에 해당 */
 }
 
 .sw-festival .swiper-slide.swiper-slide-active a {
@@ -782,47 +784,279 @@ section {
   width: 100%;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 .alio .card-wrap .alio-card .text-wrap .date {
   display: block;
   width: 100%;
   font-size: 14px;
-  color: #4b4b57;
+  color: #4d4d57;
   margin-bottom: 5px;
 }
 .alio .card-wrap .alio-card .text-wrap .location {
   display: block;
   width: 100%;
   font-size: 14px;
-  color: #4b4b57;
+  color: #4d4d57;
   margin-bottom: 5px;
 }
+
 .banner {
+  position: relative;
   width: 100%;
-  height: 229px;
+  /* height: 229px; */
   padding-top: 65px;
-  background-color: chocolate;
+  /* background-color: chocolate; */
 }
-.theme {
+.banner .inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.banner .pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: 13px; */
+}
+.banner .pagination .banner-prev-btn {
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_prev.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
+}
+.banner .pagination .banner-next-btn {
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_next.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
+}
+.banner .pagination .swiper-pagination {
+  position: static;
+  width: auto;
+  margin: 0 16px;
+}
+.banner .pagination .swiper-pagination .swiper-pagination-current {
+  display: inline-block;
+  width: 10px;
+  margin-right: 3px;
+  font-weight: 600;
+}
+.banner .pagination .swiper-pagination .swiper-pagination-total {
+  margin-left: 3px;
+  font-weight: 300;
+}
+.banner .pagination .play-stop-btn {
+  width: 12px;
+  height: 14px;
+  background: url("../assets/icons/slide_stop_bk.png") center no-repeat;
+  background-size: 8px 10px;
+  text-indent: -9999px;
+  margin-right: 16px;
+}
+
+.sw-banner {
+  position: relative;
+  /* width: 100%; */
+}
+.sw-banner .swiper-wrapper {
+  position: relative;
+}
+.sw-banner .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.sw-banner .swiper-wrapper .swiper-slide a {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sw-banner .swiper-wrapper .swiper-slide a > img {
   width: 100%;
-  height: 262px;
+  height: auto;
+  object-fit: contain;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .desc {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap strong {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  gap: 4px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: fit-content;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn span {
+  font-size: 14px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn img {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.theme {
+  position: relative;
+  width: 100%;
+  /* height: 262px; */
   padding-top: 65px;
   padding-bottom: 80px;
-  background-color: sandybrown;
+  /* background-color: sandybrown; */
+}
+.theme .inner {
+}
+.theme .title-wrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.theme .section-title {
+}
+.theme .more-btn {
+}
+.theme-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.theme-wrap a {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.theme-wrap a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* 메인 영역 끝 */
 
 /* 푸터 영역 시작 */
 .footer {
+  position: relative;
   width: 100%;
-  height: 206px;
+  /* height: 206px; */
+  /* background-color: thistle; */
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: thistle;
+  justify-content: center;
+  background-color: #fff;
+  border-top: 1px solid #e6e6eb;
+}
+.footer .inner {
+  position: relative;
+}
+.footer-top {
+  position: relative;
+  width: 100%;
+  padding: 32px 0 16px 0;
+  border-bottom: 1px solid #e6e6eb;
+}
+.footer-top > ul {
+  position: relative;
+  width: 100%;
+}
+.footer-top > ul li {
+  float: left;
+  margin-right: 25px;
+}
+.footer-top > ul li:last-child {
+  margin-right: 0;
+}
+.footer-top > ul li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666670;
+}
+.footer-top > ul li a.term {
+  color: #2c47dc;
+  font-weight: 700;
+}
+.footer-top > ul::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
+.footer-top address {
+  position: relative;
+  padding-top: 16px;
+  font-style: normal;
+}
+.footer-top address > ul {
+  position: relative;
+  width: 100%;
+}
+.footer-top address > ul li {
+  float: left;
+  font-size: 14px;
+  margin-right: 12px;
+  color: #666670;
+}
+.footer-top address > ul li:last-child {
+  margin-right: 0;
+}
+.footer-top address > ul li a {
+  color: inherit;
+}
+.footer-top address > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 16px 0 32px 0;
+}
+.footer-bottom .copy {
+  margin-right: auto;
+  font-size: 14px;
+  color: #666670;
+}
+.footer-bottom ul {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-bottom ul li {
+  margin-right: 32px;
+}
+.footer-bottom ul li:last-child {
+  margin-right: 0;
+}
+.footer-bottom ul li a {
+}
+.footer-bottom ul li a img {
+}
 /* 푸터 영역 끝 */
 
 /* 태그(타입) 선택자 */

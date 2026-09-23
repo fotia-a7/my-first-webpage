@@ -27,6 +27,7 @@
     <script src="js/script.js" defer></script>
     <script src="js/swHero.js" defer></script>
     <script src="js/swFestival.js" defer></script>
+    <script src="js/swBanner.js" defer></script>
   </head>
 
   <body>
@@ -434,9 +435,9 @@
             </div>
             <!-- Swiper -->
             <div class="pagination">
-              <button class="festival-prev-btn"></button>
+              <button class="festival-prev-btn">이전</button>
               <div class="swiper-pagination"></div>
-              <button class="festival-next-btn"></button>
+              <button class="festival-next-btn">다음</button>
             </div>
             <div class="festival-slide">
               <div class="swiper sw-festival">
@@ -444,7 +445,7 @@
                   <div class="swiper-slide">
                     <a href="#">
                       <img
-                        src="assets/images/local-fest-slide-1.jpg"
+                        src="assets/images/local-fev-slide-1.jpg"
                         alt="글로컬 남산 페스티벌"
                       />
                     </a>
@@ -452,7 +453,7 @@
                   <div class="swiper-slide">
                     <a href="#">
                       <img
-                        src="assets/images/local-fest-slide-2.png"
+                        src="assets/images/local-fev-slide-2.png"
                         alt="처인성 문화제"
                       />
                     </a>
@@ -460,7 +461,7 @@
                   <div class="swiper-slide">
                     <a href="#">
                       <img
-                        src="assets/images/local-fest-slide-3.jpg"
+                        src="assets/images/local-fev-slide-3.jpg"
                         alt="뚜벅뚜벅 여행"
                       />
                     </a>
@@ -468,7 +469,7 @@
                   <div class="swiper-slide">
                     <a href="#">
                       <img
-                        src="assets/images/local-fest-slide-4.jpg"
+                        src="assets/images/local-fev-slide-4.jpg"
                         alt="근대도시 대전 중구 야행"
                       />
                     </a>
@@ -476,7 +477,7 @@
                   <div class="swiper-slide">
                     <a href="#">
                       <img
-                        src="assets/images/local-fest-slide-1.jpg"
+                        src="assets/images/local-fev-slide-1.jpg"
                         alt="글로컬 남산 페스티벌"
                       />
                     </a>
@@ -484,7 +485,7 @@
                   <div class="swiper-slide">
                     <a href="#">
                       <img
-                        src="assets/images/local-fest-slide-2.png"
+                        src="assets/images/local-fev-slide-2.png"
                         alt="처인성 문화제"
                       />
                     </a>
@@ -515,7 +516,7 @@
                       <span class="img">
                         <img
                           src="assets/images/alio-slide-1.jpg"
-                          alt="함평모악산 꽃모릇축제"
+                          alt="함평모악산 꽃무릇축제"
                         />
                       </span>
                     </div>
@@ -564,7 +565,7 @@
                     <div class="text-wrap">
                       <strong>경산 갓바위소원성취축제</strong>
                       <span class="date">2026.09.19 ~ 2026.09.20</span>
-                      <span class="location">경상북도 경산시</span>
+                      <span class="location">경산북도 경산시</span>
                     </div>
                   </a>
                 </li>
@@ -594,14 +595,95 @@
           </div>
         </section>
         <section class="banner">
-          <div class="inner">배너 슬라이드 영역</div>
+          <div class="inner">
+            <!-- Swiper -->
+            <div class="pagination">
+              <button class="banner-prev-btn">이전</button>
+              <div class="swiper-pagination"></div>
+              <button class="play-stop-btn">정지</button>
+              <button class="banner-next-btn">다음</button>
+            </div>
+
+            <div class="swiper sw-banner">
+              <div class="swiper-wrapper">
+                <!-- swBanner.js 에서 동적으로 swiper-slide 생성 -->
+              </div>
+            </div>
+          </div>
         </section>
         <section class="theme">
-          <div class="inner">테마 축제 영역</div>
+          <div class="inner">
+            <div class="title-wrap">
+              <h2 class="section-title">테마<em>로 보는 축제</em></h2>
+              <a class="more-btn" href="#">+ More</a>
+            </div>
+
+            <div class="theme-wrap">
+              <a href="#">
+                <img src="assets/images/theme-img-1.png" alt="국가유산야행" />
+              </a>
+              <a href="#">
+                <img src="assets/images/theme-img-2.png" alt="떠나볼지도" />
+              </a>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="footer">
-        <div class="inner">푸터영역</div>
+        <div class="inner">
+          <div class="footer-top">
+            <ul>
+              <li><a href="#" class="term">개인정보처리방침</a></li>
+              <li><a href="#">위치기반 서비스 이용약관</a></li>
+              <li><a href="#">개인위치정보 처리방침</a></li>
+              <li><a href="#">저작권정책</a></li>
+              <li><a href="#">고객서비스헌장</a></li>
+              <li><a href="#">전자우편무단수집거부</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+              <li><a href="#" class="term">자주 묻는 질문</a></li>
+            </ul>
+
+            <address>
+              <ul>
+                <li>우)26464 강원도 원주시 세계로 10</li>
+                <li>
+                  TEL :
+                  <a href="tel:033-738-3000">033-738-3000</a>
+                </li>
+                <li>사업자등록번호 : 202-81-50707</li>
+                <li>통신판매업신고 : 제2022-강원원주-0381호</li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-bottom">
+            <span class="copy">© 한국관광공사</span>
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="assets/images/f_logo1.png"
+                    alt="과학기술정보통신부 WEB접근성"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/f_logo2.png" alt="콘랩" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/f_logo3.png" alt="한국관광공사" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/f_logo4.png" alt="문화체육관광부" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
